@@ -1,0 +1,729 @@
+/******************************************
+/* CSS
+/*******************************************/
+
+/* Box Model Hack */
+*{
+  box-sizing: border-box;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+.container{
+  padding: 0 10px;
+  margin: auto;
+  width: 100%;
+  max-width: 450px;
+  position: relative;
+}
+
+/* styling for containers that more indented  */
+.indented-con{
+  margin: auto;
+  padding: 0;
+  width: 272px;
+}
+
+/* main image styling */
+.main-image-container{
+  max-width: 450px;
+  height: 145px;
+}
+
+main img{
+  max-width: 100%;
+  border-radius: 18px;
+}
+
+/* story, emotion and purpose styling */
+.container.indented-con.story-emotion{
+  margin-top: -40px;
+  max-width: 272px;
+  width: 100%;
+}
+
+.section-head{
+  width: 227px;
+  margin-bottom: 20px;
+}
+
+.section-paragraph-container{
+  margin-bottom: 20px;
+}
+
+/* Email input styling */
+.email-input-con{
+  position: relative;
+}
+
+input{
+  height: 47px;
+  max-width: 291px;
+  width: 100%;
+  margin-top: 4px;
+  border: 0;
+  border-radius: 12px;
+  background: #F2F2F2;
+}
+
+input::placeholder{
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  color: #BDBDBD;
+  padding-left: 10px;
+}
+
+/* email input button styling */
+.email-button{
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  height: 39px;
+  width: 71px;
+  border: 0;
+  border-radius: 12px;
+  background-color: #2D9CDB;
+  color: #F2F2F2;
+  letter-spacing: 01px;
+  cursor: pointer;
+
+}
+
+/* SERVICE SECTION styling */
+.service-header,.project-header, .team-header{
+  width: 259px;
+  margin-bottom: 50px;
+}
+
+.service-card{
+  margin-bottom: 40px;
+  height: 341px;
+  width: 100%;
+  max-width: 450px;
+  padding-top: 30px;
+  padding-left: 20px;
+  border-radius: 24px;
+  box-shadow: 0px 10px 30px rgba(51, 51, 51, 0.1);
+}
+
+.icon-con{
+  height: 67px;
+  width: 67px;
+  border: 0;
+  border-radius: 16px;
+  background-color: #2D9CDB;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+a{
+  text-decoration: none;
+}
+
+a h3{
+  color: #333333;
+}
+
+.material-icons, .material-icons-outlined{
+  color: white;
+  font-size: 30px;
+}
+
+/* giving color to the container that carries the */
+
+.green{
+  background-color: #27AE60;
+}
+
+.wine{
+  background-color: #EB5757;
+}
+
+/* get started button */
+.get-started{
+  height: 42px;
+  width: 116px;
+  border: 0;
+  border-radius: 12px;
+  font-size: 12px;
+  line-height: 24px;
+  background-color: #E0E0E0;
+  color: #828282;
+  cursor: pointer;
+}
+
+/* PROJECT SECTION STYLING */
+.project-card{
+  margin-bottom: 30px;
+}
+
+
+.project-image-con, .team-image-con{
+  max-height: 400px;
+  height: 100%;
+  width: 100%;
+  max-width: 400px;
+  margin-bottom: 10px;
+}
+
+
+.project-image-con img, .team-image-con img{
+  max-width: 100%;
+  border-radius: 24px;
+}
+
+
+/* giving each section margin bottom */
+section{
+  margin-bottom: 70px;
+}
+
+/* MEET THE TEAM STYLING */
+.team-con{
+  margin-bottom: 50PX;
+}
+
+.team-header{
+  width: 280px;
+  height: 162px;
+  margin-bottom: 0;
+  margin-top: -25px;
+}
+
+.team-paragraph{
+  width: 273px;
+  height: 48px;
+  margin-top: -5px;
+}
+
+.team-member-con{
+  display: flex;
+  align-items: center;
+}
+
+.member-one{
+  margin-right: 15px;
+}
+
+/* COMMENT SECTION */
+.comment-paragraph{
+  max-width: 450px;
+  width: 100%;
+  height: 180px;
+}
+
+.comment-paragraph p{
+  font-size: 20px;
+  line-height: 36px;
+  font-weight: 500;
+}
+
+.comment-details-con{
+  display: flex;
+  align-items: center;
+}
+
+.comment-image{
+  width: 100px;
+  height: 100px;
+}
+
+.comment-image img{
+  max-width: 100%;
+  border-radius: 12px;
+}
+
+.comment-details{
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+}
+
+/* FOOTER STYLING */
+footer{
+  background-color: #100E1D;
+  color: white;
+  padding-top: 10px;
+}
+
+footer ul{
+  margin-bottom: 60px;
+  padding-left: 0;
+}
+
+li{
+  list-style-type: none;
+  font-size: 18px;
+  line-height: 36px;
+}
+
+.footer-icon{
+  margin-bottom: 50px;
+}
+
+.email-bottom-con{
+  margin-bottom: 70px;
+}
+
+/* footer icons: instagram, linkedin and twitter */
+.fa-brands{
+  font-size: 24px;
+  color: #F2F2F2;
+  margin-left: 5px;
+}
+/* TEXT STYLING */
+header h1, h2{
+  font-family: 'Heebo', sans-serif;
+  font-size: 24px;
+  font-weight: 800;
+  line-height: 35px;
+  color: #333333;
+}
+
+span, p,h1, h2, h3, button, li, a{
+  font-family: 'Poppins', sans-serif;
+}
+
+/* small text above the main heading */
+.ques-text{
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: 500;
+  color: #2D9CDB;
+  
+}
+
+h1{
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 36px;
+  color: #333333;
+  margin-top: 5px;
+}
+
+p{
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 18px;
+  color:  #4F4F4F;
+}
+
+/* text at the top of the input field */
+.email-quest{
+  font-size: 10px;
+  font-weight: 500;
+  line-height: 15px;
+  color: #828282;
+}
+
+
+/* text for project section */
+.project-type{
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 18px;
+  color: #828282;
+}
+
+.project-name{
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 27px;
+  color: #333333;
+}
+
+
+/* text for meet the team  */
+
+
+.team{
+  font-size: 18px;
+  font-weight: 500;
+  line-height:20px;
+  color: #EB5757;
+}
+
+.team-header h2{
+  line-height: 54px;
+  font-weight: 500;
+  font-size: 36px;
+}
+
+.team-paragraph p{
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+}
+
+/* comment section text styling */
+.comment-details span:nth-child(1){
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 36px;
+  color: #333333;
+}
+
+.comment-details span:nth-child(2){
+  font-size: 18px;
+  line-height: 27px;
+  color: #828282;
+  margin-top: 10px;
+}
+
+/* footer styling */
+footer h1{
+  font-size: 36px;
+  line-height: 52px;
+  font-weight: 800;
+  color: #F2F2F2;
+  letter-spacing: 1px;
+}
+
+footer p{
+  text-align: center;
+  padding-bottom: 10px;
+  margin-bottom: 0;
+}
+
+
+footer a{
+  color: #F2F2F2;
+}
+
+/* NAV HOVER STYLYING */
+/* nav bar styling */
+nav a:hover{
+  border-bottom: solid 3px #333333;
+  transition: all 0.3s ease-in-out;
+}
+
+nav a{
+  color: #333333;
+}
+
+header i:hover{
+  transform: scale(1.1);
+}
+
+
+/* Hovering of service card and  project card */
+
+.service-card:hover, .project-card:hover{
+  transform: scale(1.1);
+  transition: all 0.3s ease-in-out;
+}
+
+.team-section-con:focus{
+  transform: scale(1);
+  transition: all 0.3 ease-in-out;
+}
+
+
+@media (max-width:767px){
+  header > div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 30px;
+    background: #F2F2F2;
+    position: fixed;
+    width: 100%;
+    top:0;
+    z-index: 5;
+    height: 50px;
+  }
+  
+  header i{
+    font-size: 26px;
+    cursor: pointer;
+    margin-right: 20px;
+  }
+  
+  header h1{
+    margin-top: 20px;
+  }
+
+  nav{
+    margin-top: -80px;
+  }
+  
+  nav ul{
+    text-align: center;
+    height: 100vh;
+    margin: 100px auto;
+    position: fixed;
+    background: white;
+    z-index: 3;
+    width: 100vw;
+    margin-top: 0;
+    padding-top:200px;
+    transition: all 0.5s ease-in;
+  }
+
+  .transparent{
+    opacity: 0;
+    transition: all 0.3s ease-out;
+  }
+
+  nav ul li{
+    line-height: 60px;
+
+  }
+  
+  
+  .hidden{
+    display: none;
+    transition: all 0.5s ease-in;
+    
+  }
+
+  #main{
+    margin-top: 100px;
+  }
+
+ 
+
+  #contact > .container{
+    margin-left: 30px;
+  }
+  
+
+
+  footer .email-button{
+    left: 215px;
+  }
+}
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+
+
+@media (min-width:768px){
+  .container{
+    max-width: 800px;
+    margin: auto;
+  }
+
+  .indented-con.services-con{
+    margin: auto;
+    padding: 0;
+    width: 100%;
+  }
+
+  .indented-con.project-header{
+    margin-left: 0;
+  }
+
+  .main-image-container{
+    max-width: 800px;
+    height: 200px;
+    margin-bottom: 50px;
+  }
+  
+  main img{
+    max-width: 100%;
+    border-radius: 18px;
+  }
+  
+/* project section */
+  .project-card-con{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .project-con{
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .project-card{
+    flex-basis: 48%;
+  }
+
+  
+.project-image-con{
+  max-height: 350px;
+  height: 100%;
+  width: 100%;
+  max-width: 365px;
+  margin-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+.project-image-con img{
+  max-width: 100%;
+  border-radius: 24px;
+}
+
+/* Shifting some of the imgages downward with by some margin */
+  
+.project-card:nth-child(odd){
+  margin-right: 15px;
+  margin-top: 100px;
+}
+
+.team-section-con{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  width: 100%;
+}
+
+
+.team-image-con{
+  max-width: 200px;
+  max-height: 200px;
+}
+
+h1, h2{
+  font-size: 30px;
+  font-weight: 500;
+  line-height: 54px;
+}
+
+.project-header, .team-header, .main-header{
+  width: 350px;
+  margin-bottom: 50px;
+}
+
+.service-header{
+  width: 300px;
+}
+
+.section-head{
+  width: 300px;
+}
+
+/* header styling for this screen size:  */
+header .container{
+  display: flex;
+  justify-content: space-between;
+}
+
+header{
+  margin-bottom: 50px;
+}
+
+.main-head{
+  margin-left: 200px;
+}
+
+header h1{
+  margin-left: 50px;
+}
+
+/* navbar styling */
+
+header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px 40px;
+
+}
+
+header > div{
+  margin-top: 27px;
+}
+
+nav ul{
+  display: flex;
+  flex-direction: row;
+  margin-right: 40px;
+}
+
+nav ul li{
+  margin-left: 25px;
+}
+
+nav a{
+  color: #333333;
+}                                                    
+
+/* hiding the hamburger icon */
+header > div i{
+  display: none !important;
+}
+
+
+
+
+}
+
+@media (min-width:1280px){
+  footer .email-button{
+    position: absolute;
+    top: 8px;
+    right: 110px;  
+  }
+
+  .container{
+    max-width: 1200px;
+    width: 100%;
+    margin: auto;
+  }
+
+  .main-image-container{
+    max-width: 1200px;
+    height: 350px;
+    margin-bottom: 0;
+  }
+  main img{
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 18px;
+  }
+
+  .service-card{
+    max-width: 300px;
+  }
+
+  .service-card p{
+    padding-right: 30px;
+  }
+
+  /* project section */
+  .project-image-con{
+    max-height: 600px;
+    height: 100%;
+    width: 100%;
+    max-width: 600px;
+    margin-bottom: 10px;
+  }
+
+  .project-card-con{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .project-con{
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .project-card{
+    flex-basis: 48%;
+  }
+
+  .project-detail-con{
+    margin-top: -30px;
+  }
+
+  .top{
+    margin-top: -60px;
+  }
+  
+}
+
