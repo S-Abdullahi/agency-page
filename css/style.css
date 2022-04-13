@@ -11,7 +11,7 @@
 /* LAYOUT
 /*******************************************/
 .container{
-  padding: 0 10px;
+  padding: 0 15px;
   margin: auto;
   width: 100%;
   max-width: 450px;
@@ -50,6 +50,7 @@ main img{
 
 .section-paragraph-container{
   margin-bottom: 20px;
+  /* padding-right: 20px; */
 }
 
 /* Email input styling */
@@ -101,8 +102,7 @@ input::placeholder{
   height: 341px;
   width: 100%;
   max-width: 450px;
-  padding-top: 30px;
-  padding-left: 20px;
+  padding: 30px 10px 0 20px;
   border-radius: 24px;
   box-shadow: 0px 10px 30px rgba(51, 51, 51, 0.1);
 }
@@ -125,6 +125,7 @@ a{
 a h3{
   color: #333333;
 }
+
 
 .material-icons, .material-icons-outlined{
   color: white;
@@ -157,6 +158,8 @@ a h3{
 /* PROJECT SECTION STYLING */
 .project-card{
   margin-bottom: 30px;
+  margin-right: 20px;
+  margin-left: 20px;
 }
 
 
@@ -167,6 +170,8 @@ a h3{
   max-width: 400px;
   margin-bottom: 10px;
 }
+
+
 
 
 .project-image-con img, .team-image-con img{
@@ -277,7 +282,7 @@ li{
 header h1, h2{
   font-family: 'Heebo', sans-serif;
   font-size: 24px;
-  font-weight: 800;
+  font-weight: 500;
   line-height: 35px;
   color: #333333;
 }
@@ -346,15 +351,18 @@ p{
 }
 
 .team-header h2{
-  line-height: 54px;
+  line-height: 30px;
   font-weight: 500;
-  font-size: 36px;
+  font-size: 20px;
+  margin-top: 40px;
+  margin-bottom: 0;
 }
 
 .team-paragraph p{
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;
+  margin-top: -80px;
 }
 
 /* comment section text styling */
@@ -410,8 +418,8 @@ header i:hover{
 
 /* Hovering of service card and  project card */
 
-.service-card:hover, .project-card:hover{
-  transform: scale(1.1);
+.project-card:hover, .service-card:hover{
+  transform: scale(1.05);
   transition: all 0.3s ease-in-out;
 }
 
@@ -433,6 +441,8 @@ header i:hover{
     top:0;
     z-index: 5;
     height: 50px;
+    box-shadow: 0px 3px 5px rgba(51, 51, 51, 0.1);
+
   }
   
   header i{
@@ -445,25 +455,28 @@ header i:hover{
     margin-top: 20px;
   }
 
-  nav{
-    margin-top: -80px;
-  }
-  
+    h1, h2{
+      font-size: 20px;
+    }
+ 
   nav ul{
     text-align: center;
-    height: 100vh;
+    height: 1000px;
     margin: 100px auto;
     position: fixed;
+    top: 0;
+    bottom: 0;
     background: white;
     z-index: 3;
     width: 100vw;
     margin-top: 0;
-    padding-top:200px;
+    padding-top:150px;
     transition: all 0.5s ease-in;
+    left: -100%;
   }
 
   .transparent{
-    opacity: 0;
+    display: none;
     transition: all 0.3s ease-out;
   }
 
@@ -480,7 +493,7 @@ header i:hover{
   }
 
   #main{
-    margin-top: 100px;
+    margin-top: 80px;
   }
 
  
@@ -494,12 +507,25 @@ header i:hover{
   footer .email-button{
     left: 215px;
   }
+
+  .fa-xmark{
+    opacity: 0;
+    position: absolute;
+    right:60px;
+    transition: all 0.3s ease-in;
+  }
+
 }
 /******************************************
 /* ADDITIONAL STYLES
 /*******************************************/
 
 
+@media (max-width:320px){
+ .footer{
+   margin-left: -25px !important;
+ }
+}
 @media (min-width:768px){
   .container{
     max-width: 800px;
@@ -537,10 +563,14 @@ header i:hover{
   .project-con{
     display: flex;
     flex-wrap: wrap;
+    margin-right: 10px;
+    margin-left: 10px;
   }
 
   .project-card{
     flex-basis: 48%;
+    margin-left: 0;
+    margin-right: 0;
   }
 
   
@@ -563,7 +593,7 @@ header i:hover{
 /* Shifting some of the imgages downward with by some margin */
   
 .project-card:nth-child(odd){
-  margin-right: 15px;
+  margin-right: 20px;
   margin-top: 100px;
 }
 
@@ -585,6 +615,13 @@ header i:hover{
   max-width: 200px;
   max-height: 200px;
 }
+
+.team-header h2{
+  line-height: 54px;
+  font-weight: 500;
+  font-size: 34px;
+}
+
 
 h1, h2{
   font-size: 30px;
