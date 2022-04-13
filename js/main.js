@@ -10,20 +10,41 @@ document.querySelector('#team-nav').addEventListener('click', serviceIcon)
 
 document.querySelector('#contact-nav').addEventListener('click', serviceIcon)
 
+document.querySelector('.fa-xmark').addEventListener('click', cancelIcon)
 
+
+// declaration of the hamburger, cancel icon and the complete nav bar
+const unorderedNav = document.querySelector('.unorderedNav')
+const hamburgerIcon = document.querySelector('.fa-bars')
+const cancel = document.querySelector('.fa-xmark')
+
+
+// function for clicking the hamburger icon
 function barIcon(){
-    document.querySelector('.unorderedNav').classList.remove('transparent')
-    document.querySelector('nav').classList.toggle('hidden')
+        unorderedNav.style.left = 0
+        unorderedNav.style.opacity = 1 
+        hamburgerIcon.style.opacity = 0
+        cancel.style.opacity = 1
+        cancel.style.right = '30px'
 }
 
-function removeNav(){
-    document.querySelector('.unorderedNav').classList.toggle('transparent')
+// function for clicking the closing icon
+function cancelIcon(){
+    unorderedNav.style.left = '-500px'
+    hamburgerIcon.style.opacity = 1
+    cancel.style.opacity = 0
+    cancel.style.right = '60px'
+
+
 }
 
+// function for clicking any of the menu
 function serviceIcon(){
-    removeNav()
-  
+        unorderedNav.style.opacity = 0 
+        unorderedNav.style.left = '-500px'
+        hamburgerIcon.style.opacity = 1
+        cancel.style.opacity = 0
+        cancel.style.right = '60px'  
 }
-
 
 
